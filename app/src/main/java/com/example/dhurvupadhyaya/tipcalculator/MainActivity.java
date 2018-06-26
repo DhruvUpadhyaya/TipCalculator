@@ -56,13 +56,13 @@ public class MainActivity extends AppCompatActivity {
         _calculatedTip.setText("Calculated Tip :" + Integer.toString(newAmount) +"$");
 
 
-        _resultTip.setText("Tip : " + seekBar.getProgress() +"/" + seekBar.getMax());
+        _resultTip.setText("Tip : " + seekBar.getProgress() +"%");
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
 
-                _resultTip.setText("Tip : " + seekBar.getProgress() +"/" + seekBar.getMax());
+                _resultTip.setText("Tip : " + seekBar.getProgress() +"%");
 
                 if (seekBar.getProgress() == 12 ){
                     rating.setText("Average!!");
